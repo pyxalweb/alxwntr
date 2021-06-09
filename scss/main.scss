@@ -1,0 +1,114 @@
+/* Variables
+============================================================ */
+$primary-color: #000;
+$secondary-color: #fff;
+$third-color: #242424;
+
+$max-width: 75ch;
+
+$text-big: 2.25rem;
+$text-medium: 1.5rem;
+$text-regular: 1.125rem;
+$text: 1rem;
+
+/* General
+============================================================ */
+body {
+    margin: 0;
+    background: $primary-color;
+    color: $secondary-color;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+/* Links
+============================================================ */
+a {
+    color: $secondary-color;
+    text-decoration: none;
+}
+
+/* Header
+============================================================ */
+.site-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: $max-width;
+    min-height: 5em;
+    padding: 1em;
+    border-bottom: 1px solid $third-color;
+
+    @media (min-width: 32em) {
+        flex-direction: row;
+        min-height: 7em;
+        margin: 0 auto;
+    }
+
+    .site-logo {
+        text-align: center;
+
+        @media (min-width: 32em) {
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        span {
+            font-size: $text-big;
+            font-weight: bold;
+        }
+    }
+
+    .site-nav {
+        @media (min-width: 32em) {
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 0 0.2em 0;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            @media (min-width: 32em) {
+                justify-content: space-between;
+            }
+
+            li {
+                @media (min-width: 32em) {
+                    flex: 0 0 auto;
+
+                    &+li {
+                        margin-left: 1em;
+                    }
+                }
+
+                a {
+                    background: transparent;
+                    padding: 0.7em 1.25em;
+                    border-radius: 7px;
+                    text-transform: lowercase;
+
+                    &:hover,
+                    &:focus {
+                        background: $third-color;
+                        transition: all .25s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Main
+============================================================ */
+main {
+    font-size: $text-regular;
+}

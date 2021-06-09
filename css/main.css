@@ -1,0 +1,99 @@
+/* Variables
+============================================================ */
+/* General
+============================================================ */
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+/* Links
+============================================================ */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Header
+============================================================ */
+.site-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 75ch;
+  min-height: 5em;
+  padding: 1em;
+  border-bottom: 1px solid #242424;
+}
+@media (min-width: 32em) {
+  .site-header {
+    flex-direction: row;
+    min-height: 7em;
+    margin: 0 auto;
+  }
+}
+.site-header .site-logo {
+  text-align: center;
+}
+@media (min-width: 32em) {
+  .site-header .site-logo {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.site-header .site-logo span {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+@media (min-width: 32em) {
+  .site-header .site-nav {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 0.2em 0;
+  }
+}
+.site-header .site-nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 32em) {
+  .site-header .site-nav ul {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 32em) {
+  .site-header .site-nav ul li {
+    flex: 0 0 auto;
+  }
+  .site-header .site-nav ul li + li {
+    margin-left: 1em;
+  }
+}
+.site-header .site-nav ul li a {
+  background: transparent;
+  padding: 0.7em 1.25em;
+  border-radius: 7px;
+  text-transform: lowercase;
+}
+.site-header .site-nav ul li a:hover, .site-header .site-nav ul li a:focus {
+  background: #242424;
+  transition: all 0.25s;
+}
+
+/* Main
+============================================================ */
+main {
+  font-size: 1.125rem;
+}
+
+/*# sourceMappingURL=main.css.map */

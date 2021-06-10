@@ -10,6 +10,21 @@ body {
   font-size: 16px;
 }
 
+/* Headings
+============================================================ */
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 /* Links
 ============================================================ */
 a {
@@ -23,22 +38,22 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 75ch;
+  max-width: 800px;
   min-height: 5em;
+  margin: 0 auto;
   padding: 1em;
   border-bottom: 1px solid #242424;
 }
-@media (min-width: 32em) {
+@media (min-width: 512px) {
   .site-header {
     flex-direction: row;
     min-height: 7em;
-    margin: 0 auto;
   }
 }
 .site-header .site-logo {
   text-align: center;
 }
-@media (min-width: 32em) {
+@media (min-width: 512px) {
   .site-header .site-logo {
     flex: 0 0 auto;
     display: flex;
@@ -50,7 +65,7 @@ a {
   font-size: 2.25rem;
   font-weight: bold;
 }
-@media (min-width: 32em) {
+@media (min-width: 512px) {
   .site-header .site-nav {
     flex: 0 0 auto;
     display: flex;
@@ -66,12 +81,12 @@ a {
   padding: 0;
   list-style: none;
 }
-@media (min-width: 32em) {
+@media (min-width: 512px) {
   .site-header .site-nav ul {
     justify-content: space-between;
   }
 }
-@media (min-width: 32em) {
+@media (min-width: 512px) {
   .site-header .site-nav ul li {
     flex: 0 0 auto;
   }
@@ -93,7 +108,63 @@ a {
 /* Main
 ============================================================ */
 main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em 1em;
   font-size: 1.125rem;
+}
+
+/* Footer
+============================================================ */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em 1em;
+  font-size: 1.125rem;
+  border-top: 1px solid #242424;
+}
+@media (min-width: 512px) {
+  footer {
+    flex-direction: row;
+  }
+}
+
+.copyright {
+  text-align: center;
+}
+
+.social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.social li {
+  display: inline-block;
+}
+.social li a {
+  font-size: 2.25rem;
+  color: #ABABAB;
+}
+
+/* Post Items
+============================================================ */
+.post-item {
+  margin: 0 0 1em 0;
+}
+.post-item h3 {
+  margin: 0;
+}
+
+/* Post Meta
+============================================================ */
+.post-meta p {
+  margin: 0;
+  font-size: 1rem;
+  color: #ABABAB;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,6 +3,7 @@
 ?>
 
 <main>
+	<h2>2021</h2>
 <?php
 	$posts2021 = new WP_Query(array (
 		'post_type' => 'post',
@@ -15,9 +16,9 @@
 ?>
 
 	<section class="post-item">
-		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+		<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 		<div class="post-meta">
-			<p><?php the_time('m/d'); ?> - <?php echo get_the_category_list(', '); ?></p>
+			<p><?php the_time('m/d'); ?> - <?php foreach((get_the_category()) as $category) { echo $category->cat_name . ' '; } ?></p>
 		</div>
 	</section>
 

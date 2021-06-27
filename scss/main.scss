@@ -4,6 +4,7 @@ $primary-color: #000;
 $secondary-color: #fff;
 $third-color: #242424;
 $fourth-color: #ABABAB;
+$fifth-color: #2994ff;
 
 $max-width: 800px;
 
@@ -13,6 +14,12 @@ $text-regular: 1.125rem;
 $text: 1rem;
 
 $break-one: 512px;
+
+/* Modifiers
+============================================================ */
+.center {
+    text-align: center;
+}
 
 /* General
 ============================================================ */
@@ -26,6 +33,12 @@ body {
 
 /* Headings
 ============================================================ */
+h1,
+h2,
+h3 {
+    margin: 0 0 1em 0;
+}
+
 h1 {
     font-size: $text-big;
 }
@@ -44,6 +57,30 @@ h3 {
 a {
     color: $secondary-color;
     text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $fifth-color;
+        transition: all .25s;
+    }
+
+    &.button {
+        padding: 0.7em 1.25em;
+        border-radius: 7px;
+        background: $third-color;
+    }
+}
+
+/* Text
+============================================================ */
+p,
+ul li {
+    line-height: 1.75em;
+}
+
+time {
+    color: $fourth-color;
+    font-style: italic;
 }
 
 /* Header
@@ -53,29 +90,30 @@ a {
     flex-direction: column;
     justify-content: space-between;
     max-width: $max-width;
-    min-height: 5em;
     margin: 0 auto;
-    padding: 1em;
+    padding: 3em 1em;
     border-bottom: 1px solid $third-color;
 
     @media (min-width: $break-one) {
         flex-direction: row;
-        min-height: 7em;
     }
 
     .site-logo {
+        margin-bottom: 1em;
+        font-size: $text-big;
+        font-weight: bold;
         text-align: center;
 
+        .logo {
+            margin: 0;
+        }
+
         @media (min-width: $break-one) {
+            margin: 0;
             flex: 0 0 auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
-        }
-
-        span {
-            font-size: $text-big;
-            font-weight: bold;
         }
     }
 
@@ -130,7 +168,7 @@ a {
 main {
     max-width: $max-width;
     margin: 0 auto;
-    padding: 2em 1em;
+    padding: 3em 1em;
     font-size: $text-regular;
 }
 
@@ -142,7 +180,7 @@ footer {
     justify-content: space-between;
     max-width: $max-width;
     margin: 0 auto;
-    padding: 2em 1em;
+    padding: 3em 1em;
     font-size: $text-regular;
     border-top: 1px solid $third-color;
 
@@ -152,7 +190,9 @@ footer {
 }
 
 .copyright {
+    margin: 0;
     text-align: center;
+    line-height: 2.25em;
 }
 
 .social {
@@ -165,8 +205,14 @@ footer {
         display: inline-block;
 
         a {
+            padding: 0 0.2em;
             font-size: $text-big;
             color: $fourth-color;
+
+            &:hover,
+            &:focus {
+                color: $fifth-color;
+            }
         }
     }
 }
@@ -175,6 +221,11 @@ footer {
 ============================================================ */
 .post-item {
     margin: 0 0 1em 0;
+
+    &:last-child {
+        margin: 0;
+    }
+
     h3 {
         margin: 0;
     }
@@ -187,5 +238,20 @@ footer {
         margin: 0;
         font-size: $text;
         color: $fourth-color;
+    }
+}
+
+/* Posts
+============================================================ */
+.post {
+    p {
+        margin: 0 0 1.75em 0;
+        line-height: 1.75em;
+    }
+
+    * {
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }

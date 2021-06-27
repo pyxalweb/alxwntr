@@ -1,5 +1,11 @@
 /* Variables
 ============================================================ */
+/* Modifiers
+============================================================ */
+.center {
+  text-align: center;
+}
+
 /* General
 ============================================================ */
 body {
@@ -12,6 +18,12 @@ body {
 
 /* Headings
 ============================================================ */
+h1,
+h2,
+h3 {
+  margin: 0 0 1em 0;
+}
+
 h1 {
   font-size: 2.25rem;
 }
@@ -31,6 +43,27 @@ a {
   color: #fff;
   text-decoration: none;
 }
+a:hover, a:focus {
+  color: #2994ff;
+  transition: all 0.25s;
+}
+a.button {
+  padding: 0.7em 1.25em;
+  border-radius: 7px;
+  background: #242424;
+}
+
+/* Text
+============================================================ */
+p,
+ul li {
+  line-height: 1.75em;
+}
+
+time {
+  color: #ABABAB;
+  font-style: italic;
+}
 
 /* Header
 ============================================================ */
@@ -39,31 +72,32 @@ a {
   flex-direction: column;
   justify-content: space-between;
   max-width: 800px;
-  min-height: 5em;
   margin: 0 auto;
-  padding: 1em;
+  padding: 3em 1em;
   border-bottom: 1px solid #242424;
 }
 @media (min-width: 512px) {
   .site-header {
     flex-direction: row;
-    min-height: 7em;
   }
 }
 .site-header .site-logo {
+  margin-bottom: 1em;
+  font-size: 2.25rem;
+  font-weight: bold;
   text-align: center;
+}
+.site-header .site-logo .logo {
+  margin: 0;
 }
 @media (min-width: 512px) {
   .site-header .site-logo {
+    margin: 0;
     flex: 0 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-}
-.site-header .site-logo span {
-  font-size: 2.25rem;
-  font-weight: bold;
 }
 @media (min-width: 512px) {
   .site-header .site-nav {
@@ -110,7 +144,7 @@ a {
 main {
   max-width: 800px;
   margin: 0 auto;
-  padding: 2em 1em;
+  padding: 3em 1em;
   font-size: 1.125rem;
 }
 
@@ -122,7 +156,7 @@ footer {
   justify-content: space-between;
   max-width: 800px;
   margin: 0 auto;
-  padding: 2em 1em;
+  padding: 3em 1em;
   font-size: 1.125rem;
   border-top: 1px solid #242424;
 }
@@ -133,7 +167,9 @@ footer {
 }
 
 .copyright {
+  margin: 0;
   text-align: center;
+  line-height: 2.25em;
 }
 
 .social {
@@ -146,14 +182,21 @@ footer {
   display: inline-block;
 }
 .social li a {
+  padding: 0 0.2em;
   font-size: 2.25rem;
   color: #ABABAB;
+}
+.social li a:hover, .social li a:focus {
+  color: #2994ff;
 }
 
 /* Post Items
 ============================================================ */
 .post-item {
   margin: 0 0 1em 0;
+}
+.post-item:last-child {
+  margin: 0;
 }
 .post-item h3 {
   margin: 0;
@@ -165,6 +208,16 @@ footer {
   margin: 0;
   font-size: 1rem;
   color: #ABABAB;
+}
+
+/* Posts
+============================================================ */
+.post p {
+  margin: 0 0 1.75em 0;
+  line-height: 1.75em;
+}
+.post *:last-child {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

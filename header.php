@@ -8,12 +8,23 @@
 <body <?php body_class(); ?>>
 	<header class="site-header" id="header">
 		<div class="site-logo">
-			<span>alx.wntr</span>
+			<?php
+				if (is_front_page()) {
+			?>
+			<h1 class="logo">alx.wntr</h1>
+			<?php
+				}
+				else {
+			?>
+			<a href="/" class="logo">alx.wntr</a>
+			<?php
+				}
+			?>
 		</div>
 		<nav class="site-nav">
 			<ul>
 				<li><a href="/">Blog</a></li>
-				<li><a href="/">About</a></li>
+				<li><a href="/hello-world-im-alex-winter">About</a></li>
 			</ul>
 		</nav>
 	</header>

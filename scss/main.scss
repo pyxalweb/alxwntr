@@ -255,3 +255,11 @@ footer {
         }
     }
 }
+
+/* Wordpress Block Images
+============================================================ */
+.wp-block-image {
+    img {
+        height: 100%;
+    }
+}

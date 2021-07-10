@@ -220,4 +220,10 @@ footer {
   margin-bottom: 0;
 }
 
+/* Wordpress Block Images
+============================================================ */
+.wp-block-image img {
+  height: 100%;
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -222,6 +222,10 @@ footer {
 
 /* Wordpress Block Images
 ============================================================ */
+.wp-block-image {
+  margin: 1em 0;
+  text-align: center;
+}
 .wp-block-image img {
   height: 100%;
 }

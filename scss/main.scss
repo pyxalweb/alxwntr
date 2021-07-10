@@ -259,6 +259,9 @@ footer {
 /* Wordpress Block Images
 ============================================================ */
 .wp-block-image {
+    margin: 1em 0;
+    text-align: center;
+
     img {
         height: 100%;
     }

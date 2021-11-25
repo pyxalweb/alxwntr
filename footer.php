@@ -20,6 +20,8 @@
 		</ul>
 	</footer>
 
+	<a href="#" class="color-scheme dark-mode">Toggle Color Scheme</a>
+
 	<?php wp_footer(); ?>
 </body>
 </html>

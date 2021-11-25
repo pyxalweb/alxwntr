@@ -5,7 +5,7 @@ function theme_files() {
     wp_enqueue_style('main-styles', get_theme_file_uri('/css/main.css'));
 
     wp_enqueue_script('font-awesome', '//kit.fontawesome.com/9a167720af.js', NULL, '1.0', true);
-    //wp_enqueue_script('main-scripts', get_theme_file_uri('/js/main.js'), NULL, '1.0', true);
+    wp_enqueue_script('main-scripts', get_theme_file_uri('/js/main.js'), NULL, '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'theme_files');
 

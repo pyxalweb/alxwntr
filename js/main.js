@@ -1,24 +1,27 @@
-let toggle_color_scheme = function() {
-  let button = document.querySelector('.color-scheme');
-  let el_body = document.querySelector('body');
-  let el_links = document.querySelectorAll('a');
+// **************************************************
+//  Prevent href="#" from appending '#' to address bar
+// **************************************************
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', (event) => {
+        event.preventDefault();
+    });
+});
 
-  button.addEventListener('click', event => {
-    if (button.classList.contains('dark-mode')) {
-      button.classList.remove('dark-mode');
-      button.classList.add('light-mode');
-      
-      el_body.classList.add('light');
-      el_links.forEach(el => {el.classList.add('light');});
-    }
-    else if (button.classList.contains('light-mode')) {
-      button.classList.remove('light-mode');
-      button.classList.add('dark-mode');
-      
-      el_body.classList.remove('light');
-      el_links.forEach(el => {el.classList.remove('light');});
-    }
-  });
+
+
+
+// **************************************************
+//  Accordions
+// **************************************************
+const accordionExpand = () => {
+    document.querySelectorAll('.accordion-item').forEach((element) => {
+        const accordionTitle = element.querySelector('.accordion-title a');
+        const accordionContent = element.querySelector('.accordion-content');
+
+        accordionTitle.addEventListener('click', () => {
+            accordionTitle.classList.toggle('expanded');
+            accordionContent.classList.toggle('show');
+        });
+    });
 }
-
-toggle_color_scheme();
+accordionExpand();

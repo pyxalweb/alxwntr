@@ -26,6 +26,7 @@
 				<li><a href="/">Blog</a></li>
 				<li><a href="/hello-world-im-alex-winter">About</a></li>
 				<li><a href="/resources">Resources</a></li>
+				<li><a href="/code">Code</a></li>
 			</ul>
 		</nav>
 	</header>

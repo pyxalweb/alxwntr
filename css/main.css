@@ -100,7 +100,7 @@ time {
   border-bottom: 1px solid #242424;
 }
 
-@media (min-width: 512px) {
+@media (min-width: 640px) {
   .site-header {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -120,7 +120,7 @@ time {
   margin: 0;
 }
 
-@media (min-width: 512px) {
+@media (min-width: 640px) {
   .site-header .site-logo {
     margin: 0;
     -webkit-box-flex: 0;
@@ -174,7 +174,7 @@ time {
   list-style: none;
 }
 
-@media (min-width: 512px) {
+@media (min-width: 640px) {
   .site-header .site-nav ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -182,7 +182,7 @@ time {
   }
 }
 
-@media (min-width: 512px) {
+@media (min-width: 640px) {
   .site-header .site-nav ul li {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
@@ -338,7 +338,7 @@ footer {
 }
 
 .accordion-title a {
-  background: #c3113b;
+  background: #2994ff;
   display: block;
   padding: 0.75em 3em 0.75em 1em;
   position: relative;
@@ -377,12 +377,6 @@ footer {
   display: block;
 }
 
-/* Code
-============================================================ */
-pre {
-  white-space: pre-wrap;
-}
-
 /* PrismJS 1.26.0
 https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+markup-templating+php */
 /**
@@ -411,8 +405,8 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-  padding: 1em;
-  margin: .5em 0;
+  padding: 1.5em;
+  margin: .5em 0 2em 0;
   overflow: auto;
 }
 

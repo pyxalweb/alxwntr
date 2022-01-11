@@ -124,7 +124,7 @@ time {
     padding: 3em 1em;
     border-bottom: 1px solid $third-color;
 
-    @media (min-width: $break-one) {
+    @media (min-width: 640px) {
         flex-direction: row;
     }
 
@@ -138,7 +138,7 @@ time {
             margin: 0;
         }
 
-        @media (min-width: $break-one) {
+        @media (min-width: 640px) {
             margin: 0;
             flex: 0 0 auto;
             display: flex;
@@ -167,12 +167,12 @@ time {
             padding: 0;
             list-style: none;
 
-            @media (min-width: $break-one) {
+            @media (min-width: 640px) {
                 justify-content: space-between;
             }
 
             li {
-                @media (min-width: $break-one) {
+                @media (min-width: 640px) {
                     flex: 0 0 auto;
 
                     &+li {
@@ -349,7 +349,7 @@ footer {
     line-height: 2rem;
 
     a {
-        background: #c3113b;
+        background: $fifth-color;
         display: block;
         padding: 0.75em 3em 0.75em 1em;
         position: relative;
@@ -387,13 +387,4 @@ footer {
     &.show {
         display: block;
     }
-}
-
-
-
-
-/* Code
-============================================================ */
-pre {
-    white-space: pre-wrap;
 }

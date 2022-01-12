@@ -328,7 +328,7 @@ footer {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   gap: 0.25em;
-  margin: 0 auto;
+  margin: 3em auto 0 auto;
 }
 
 .accordion-title {
@@ -375,6 +375,10 @@ footer {
 
 .accordion-content.show {
   display: block;
+}
+
+.accordion-content p code {
+  color: #7ec699;
 }
 
 /* PrismJS 1.26.0

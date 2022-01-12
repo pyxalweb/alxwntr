@@ -336,7 +336,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0.25em;
-    margin: 0 auto;
+    margin: 3em auto 0 auto;
 }
 
 .accordion-item {
@@ -386,5 +386,11 @@ footer {
 
     &.show {
         display: block;
+    }
+
+    p {
+        code {
+            color: #7ec699;
+        }
     }
 }

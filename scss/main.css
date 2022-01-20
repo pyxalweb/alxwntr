@@ -6,10 +6,6 @@
   text-align: center;
 }
 
-.cool {
-  background: rebeccapurple;
-}
-
 /* General
 ============================================================ */
 body {
@@ -18,11 +14,6 @@ body {
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-}
-
-body.light {
-  background: #fff;
-  color: #000;
 }
 
 /* Headings
@@ -49,12 +40,8 @@ h3 {
 /* Links
 ============================================================ */
 a {
-  color: #2994ff;
+  color: #fff;
   text-decoration: none;
-}
-
-a.light {
-  color: #000;
 }
 
 a:hover, a:focus {
@@ -72,9 +59,8 @@ a.button {
 /* Text
 ============================================================ */
 p,
-ul li,
-ol li {
-  line-height: 2rem;
+ul li {
+  line-height: 1.75em;
 }
 
 time {
@@ -101,7 +87,7 @@ time {
   border-bottom: 1px solid #242424;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 512px) {
   .site-header {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -121,7 +107,7 @@ time {
   margin: 0;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 512px) {
   .site-header .site-logo {
     margin: 0;
     -webkit-box-flex: 0;
@@ -138,10 +124,6 @@ time {
         -ms-flex-pack: center;
             justify-content: center;
   }
-}
-
-.site-header .site-logo a {
-  color: #fff;
 }
 
 @media (min-width: 512px) {
@@ -175,7 +157,7 @@ time {
   list-style: none;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 512px) {
   .site-header .site-nav ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -183,7 +165,7 @@ time {
   }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 512px) {
   .site-header .site-nav ul li {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
@@ -198,7 +180,6 @@ time {
   background: transparent;
   padding: 0.7em 1.25em;
   border-radius: 7px;
-  color: #fff;
   text-transform: lowercase;
 }
 
@@ -215,10 +196,6 @@ main {
   margin: 0 auto;
   padding: 3em 1em;
   font-size: 1.125rem;
-}
-
-main a:hover, main a:focus {
-  text-decoration: underline;
 }
 
 /* Footer
@@ -253,7 +230,7 @@ footer {
 .copyright {
   margin: 0;
   text-align: center;
-  line-height: 2.25rem;
+  line-height: 2.25em;
 }
 
 .social {
@@ -303,7 +280,7 @@ footer {
 ============================================================ */
 .post p {
   margin: 0 0 1.75em 0;
-  line-height: 2rem;
+  line-height: 1.75em;
 }
 
 .post *:last-child {
@@ -319,186 +296,5 @@ footer {
 
 .wp-block-image img {
   height: 100%;
-}
-
-/* Accordions
-============================================================ */
-.content-accordion {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  gap: 0.25em;
-  margin: 3em auto 0 auto;
-}
-
-.accordion-title {
-  margin: 0;
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.accordion-title a {
-  background: #2994ff;
-  display: block;
-  padding: 0.75em 3em 0.75em 1em;
-  position: relative;
-  text-decoration: none;
-  color: #fff;
-}
-
-.accordion-title a:hover, .accordion-title a:focus {
-  text-decoration: none;
-}
-
-.accordion-title a:after {
-  content: "\f0fe";
-  display: inline-block;
-  position: absolute;
-  right: 1.5%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  top: 50%;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 2rem;
-  color: #fff;
-}
-
-.accordion-title a.expanded:after {
-  content: '\f146';
-}
-
-.accordion-content {
-  display: none;
-  padding: 1em;
-}
-
-.accordion-content.show {
-  display: block;
-}
-
-.accordion-content p code {
-  color: #7ec699;
-}
-
-/* PrismJS 1.26.0
-https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+markup-templating+php */
-/**
- * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
- * Based on https://github.com/chriskempson/tomorrow-theme
- * @author Rose Pritchard
- */
-code[class*="language-"],
-pre[class*="language-"] {
-  color: #ccc;
-  background: none;
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  font-size: 1em;
-  text-align: left;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.5;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  -webkit-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-  padding: 1.5em;
-  margin: .5em 0 2em 0;
-  overflow: auto;
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-  background: #2d2d2d;
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
-  white-space: normal;
-}
-
-.token.comment,
-.token.block-comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-  color: #999;
-}
-
-.token.punctuation {
-  color: #ccc;
-}
-
-.token.tag,
-.token.attr-name,
-.token.namespace,
-.token.deleted {
-  color: #e2777a;
-}
-
-.token.function-name {
-  color: #6196cc;
-}
-
-.token.boolean,
-.token.number,
-.token.function {
-  color: #f08d49;
-}
-
-.token.property,
-.token.class-name,
-.token.constant,
-.token.symbol {
-  color: #f8c555;
-}
-
-.token.selector,
-.token.important,
-.token.atrule,
-.token.keyword,
-.token.builtin {
-  color: #cc99cd;
-}
-
-.token.string,
-.token.char,
-.token.attr-value,
-.token.regex,
-.token.variable {
-  color: #7ec699;
-}
-
-.token.operator,
-.token.entity,
-.token.url {
-  color: #67cdcc;
-}
-
-.token.important,
-.token.bold {
-  font-weight: bold;
-}
-
-.token.italic {
-  font-style: italic;
-}
-
-.token.entity {
-  cursor: help;
-}
-
-.token.inserted {
-  color: green;
 }
 /*# sourceMappingURL=main.css.map */

@@ -10,7 +10,7 @@
 		'post_type' => 'post',
 		'ignore_sticky_posts' => 1,
 		'year' => '2022',
-		'cat' => '-4'
+		'cat' => '-4, -7'
 	));
 
 	while($posts2022->have_posts()) {

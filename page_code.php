@@ -17,11 +17,25 @@
 		<div class="content-accordion">
 
 <?php
-	$postsCode = new WP_Query(array (
+	$args = array(
 		'post_type' => 'post',
-		'ignore_sticky_posts' => 1,
-		'cat' => '4'
-	));
+		'ignore_sticky_posts' => 1
+	);
+
+	$current_slug = add_query_arg(array(), $wp->request);
+
+	if ($current_slug == 'code') {
+		$args = ['cat' => '4'];
+	}
+	elseif ($current_slug == 'code-let') {
+		$args = ['cat' => '7'];
+	}
+	else {
+		$args = ['cat' => '4'];
+	}
+
+	$postsCode = new WP_Query($args);
+	
 
 	while($postsCode->have_posts()) {
 		$postsCode->the_post();

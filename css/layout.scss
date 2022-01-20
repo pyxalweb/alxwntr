@@ -101,8 +101,9 @@ a {
 /* Text
 ============================================================ */
 p,
-ul li {
-    line-height: 1.75em;
+ul li,
+ol li {
+    line-height: 2rem;
 }
 
 time {
@@ -240,7 +241,7 @@ footer {
 .copyright {
     margin: 0;
     text-align: center;
-    line-height: 2.25em;
+    line-height: 2.25rem;
 }
 
 .social {
@@ -303,7 +304,7 @@ footer {
 .post {
     p {
         margin: 0 0 1.75em 0;
-        line-height: 1.75em;
+        line-height: 2rem;
     }
 
     * {

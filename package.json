@@ -6,13 +6,23 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pyxalweb/alxwntr.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "sass": "^1.35.1"
+  "bugs": {
+    "url": "https://github.com/pyxalweb/alxwntr/issues"
   },
+  "homepage": "https://github.com/pyxalweb/alxwntr#readme",
   "dependencies": {
-    "spotifyCurrentlyPlaying.js": "^0.3.2"
+    "cssnano": "^5.0.16",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.49.0"
   }
 }

@@ -14,8 +14,7 @@
 		<h1><?php the_title(); ?></h1>
 		<?php the_content(); ?>
 
-		<div class="content-accordion">
-
+		<ul class="list-posts">
 <?php
 	$args = array(
 		'post_type' => 'post',
@@ -35,19 +34,30 @@
 	}
 
 	$postsCode = new WP_Query($args);
-	
 
 	while($postsCode->have_posts()) {
 		$postsCode->the_post();
+		$categories = get_the_category();
 ?>
 
-    <section class="accordion-item">
-        <h2 class="accordion-title"><a href="#"><?php the_title(); ?></a></h2>
-		<div class="accordion-content">
-			<?php the_content(); ?>
-            <a href="<?php the_permalink(); ?>">Permalink</a> - <time datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('F j, Y') ?></time>
-		</div>
-	</section>
+    		<li>
+        		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+				<div class="post-meta">
+					<time datetime="<?php echo get_the_date('Y-m-d'); ?>"><?php echo get_the_date('Y-m-d') ?></time>
+					<?php if ( ! empty($categories[1])) { ?>
+					&bull; 
+					<span>
+						<?php
+							echo '<span>';
+							echo esc_html( $categories[1]->name );
+							echo '</span>';
+						?>
+					</span>  
+					<?php
+						}
+					?>
+				</div>
+			</li>
 
 <?php
 	}

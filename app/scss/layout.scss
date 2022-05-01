@@ -5,6 +5,7 @@ $secondary-color: #fff;
 $third-color: #242424;
 $fourth-color: #ABABAB;
 $fifth-color: #2994ff;
+$sixth-color: #141414;
 
 $max-width: 800px;
 
@@ -269,6 +270,43 @@ footer {
 
 
 
+/* List Posts
+============================================================ */
+.list-posts {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        margin: 0;
+        padding: 1em;
+        border-bottom: 1px solid $third-color;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        &:nth-of-type(odd) {
+            background-color: $sixth-color;
+        }
+
+        &:hover {
+            background-color: #1c1c1c;
+
+            h2 {
+                color: #3c9dff;
+            }
+        }
+    }
+
+    h2 {
+        margin: 0;
+    }
+}
+
+
+
+
 /* Post Items
 ============================================================ */
 .post-item {
@@ -289,7 +327,9 @@ footer {
 /* Post Meta
 ============================================================ */
 .post-meta {
-    p {
+    p,
+    time,
+    span {
         margin: 0;
         font-size: $text;
         color: $fourth-color;
@@ -299,7 +339,7 @@ footer {
 
 
 
-/* Posts
+/* Post
 ============================================================ */
 .post {
     p {

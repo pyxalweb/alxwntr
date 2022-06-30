@@ -277,6 +277,40 @@ footer {
   color: #2994ff;
 }
 
+/* List Posts
+============================================================ */
+.list-posts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list-posts li {
+  margin: 0;
+  padding: 1em;
+  border-bottom: 1px solid #242424;
+}
+
+.list-posts li:last-of-type {
+  border-bottom: none;
+}
+
+.list-posts li:nth-of-type(odd) {
+  background-color: #141414;
+}
+
+.list-posts li:hover {
+  background-color: #1c1c1c;
+}
+
+.list-posts li:hover h2 {
+  color: #3c9dff;
+}
+
+.list-posts h2 {
+  margin: 0;
+}
+
 /* Post Items
 ============================================================ */
 .post-item {
@@ -293,18 +327,12 @@ footer {
 
 /* Post Meta
 ============================================================ */
-.post-meta p {
+.post-meta p,
+.post-meta time,
+.post-meta span {
   margin: 0;
   font-size: 1rem;
   color: #ABABAB;
-}
-
-/* Post
-============================================================ */
-.posts {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 /* Post

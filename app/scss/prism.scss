@@ -28,6 +28,9 @@ pre[class*="language-"] {
 	-ms-hyphens: none;
 	hyphens: none;
 
+	@media (max-width: 860px) {
+		font-size: 0.9rem;
+	}
 }
 
 /* Code blocks */
@@ -35,6 +38,10 @@ pre[class*="language-"] {
 	padding: 1.5em;
 	margin: .5em 0 2em 0;
 	overflow: auto;
+
+	@media (max-width: 860px) {
+		padding: 1em 0.5em;
+	}
 }
 
 :not(pre) > code[class*="language-"],

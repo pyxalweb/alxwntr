@@ -17,6 +17,16 @@
 					<span class="fab fa-lastfm-square"></span>
 				</a>
 			</li>
+			<li>
+				<a class="github" aria-label="GitHub" href="https://github.com/pyxalweb" target="_blank" rel="noopener">
+					<span class="fab fa-github"></span>
+				</a>
+			</li>
+			<li>
+				<a class="codepen" aria-label="CodePen" href="https://codepen.io/pyxal" target="_blank" rel="noopener">
+					<span class="fab fa-codepen"></span>
+				</a>
+			</li>
 		</ul>
 	</footer>
 
